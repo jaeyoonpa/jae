@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Yoonie's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Jaeyoon Lee</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#works">Works</a>
+    </nav>
+  </header>
+
+  <section id="about" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100vh; padding: 0 20px; background-color: #fdfdfd;">
+    <h2 style="font-size: 1.5rem; margin-bottom: 1rem; font-weight: 600;">About Me</h2>
+    <p style="font-size: 1.1rem; line-height: 1.8; max-width: 700px; color: #333;">
+      모든 순간이 즐겁진 않았지만, 건축은 늘 저를 성장시켰습니다.<br><br>
+      복잡한 니즈 속에서 핵심을 짚어내고<br>
+      실용적이면서도 의미 있는 공간을 제안하는 것이<br>
+      저의 방식입니다.<br><br>
+      순발력 있게 대처하고 열정으로 밀어붙이는 실행력은<br>
+      작업마다 녹아 있습니다.<br><br>
+      ‘잘할 수 있는 일’을 ‘더 즐길 수 있는 일’로 만들어가는 중입니다.
+    </p>
+    <span id="copyEmail" class="email-copy email-bounce">jy.lee@haeahn.com</span>
+    <div id="copyToast" class="copy-toast">복사되었습니다!</div>
+    <script>
+        const emailElement = document.getElementById('copyEmail');
+        const toast = document.getElementById('copyToast');
+      
+        emailElement.addEventListener('click', () => {
+          const email = emailElement.textContent;
+      
+          navigator.clipboard.writeText(email).then(() => {
+            toast.classList.add('show');
+      
+            setTimeout(() => {
+              toast.classList.remove('show');
+            }, 1000);
+          });
+        });
+      </script>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="gallery">
+
+      <div class="works-item">
+        <div class="img-box">
+          <img src="images/레미안.jpg" alt="레미안">
+          <div class="overlay">
+            <div class="works-title">레미안 원펜타스</div>
+            <div class="desc">실시설계 입면검토</div>
+            <div class="work-year">2022</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="works-item">
+        <div class="img-box">
+          <img src="images/벡스코.jpg" alt="벡스코">
+          <div class="overlay">
+            <div class="works-title">벡스코 3전시장</div>
+            <div class="desc">현상설계 기본설계 BIM</div>
+            <div class="work-year">2023</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="works-item">
+        <div class="img-box">
+          <img src="images/청주.jpg" alt="청주">
+          <div class="overlay">
+            <div class="works-title">청주시청사</div>
+            <div class="desc">기본설계 실시설계 BIM</div>
+            <div class="work-year">2024</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="works-item">
+        <div class="img-box">
+          <img src="images/용산.jpg" alt="용산">
+          <div class="overlay">
+            <div class="works-title">용산 도시재생혁신지구 복합시설</div>
+            <div class="desc">현상설계 기본설계 BIM</div>
+            <div class="work-year">2025</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="works">
+    <h2>Works</h2>
+    <div class="gallery">
+
+      <div class="work-item">
+        <div class="img-box">
+          <img src="images/work1.jpg" alt="Project 1">
+          <div class="overlay">
+            <div class="works-title">주택 리노베이션</div>
+            <div class="desc">기능 중심 설계</div>
+            <div class="work-year">2024</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="img-box">
+          <img src="images/work2.jpg" alt="Project 2">
+          <div class="overlay">
+            <div class="works-title">상업공간 디자인</div>
+            <div class="desc">시선 유도 중심</div>
+            <div class="work-year">2023</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="img-box">
+          <img src="images/work3.jpg" alt="Project 3">
+          <div class="overlay">
+            <div class="works-title">전시공간</div>
+            <div class="desc">사용자 동선 실험</div>
+            <div class="work-year">2023</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="img-box">
+          <img src="images/work4.jpg" alt="Project 4">
+          <div class="overlay">
+            <div class="works-title">문화시설 디자인</div>
+            <div class="desc">재료 실험 중심</div>
+            <div class="work-year">2022</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="img-box">
+          <img src="images/work5.jpg" alt="Project 5">
+          <div class="overlay">
+            <div class="works-title">다이빙 센터</div>
+            <div class="desc">공간 활용 실험</div>
+            <div class="work-year">2022</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="Career">
+    <h2>Career</h2>
+    <div class="career-item">
+        <span class="career-year">24</span>
+        <div class="career-content">
+          <h3>건축사 취득</h3>
+          <p>자격번호 28847</p>
+        </div>
+      </div>
+  <div class="career-item">
+    <span class="career-year">21 -</span>
+    <div class="career-content">
+      <h3>해안종합건축사사무소</h3>
+      <p>건축설계 5년차 / 선임</p>
+    </div>
+  </div>
+  <div class="career-item">
+    <span class="career-year">16 - 21</span>
+    <div class="career-content">
+      <h3>국민대학교 건축대학 졸업</h3>
+      <p>5년제 건축설계 전공</p>
+    </div>
+  </div>
+</section>
+<div class="white-gradient"></div>
+<!-- 맨 위로 버튼 -->
+<button id="backToTop" title="맨 위로">↑</button>
+  <footer>
+    <p>&copy; 2025 jaeyoon lee </p>
+  </footer>
+  <script>
+    const backToTopButton = document.getElementById("backToTop");
+  
+    backToTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+ 
+</body>
+</html>
